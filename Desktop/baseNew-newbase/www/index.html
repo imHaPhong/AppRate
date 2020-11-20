@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div data-role="page" id="index">
+    <div data-role="page" id="indexPage">
         <nav>
 
             <div class="logo">
@@ -39,9 +39,6 @@
         <script type="text/javascript" src="js/detail.js"></script>
         <script type="text/javascript">
             app.initialize();
-            $(window).on('load', function() {
-                loadAllData()
-            })
         </script>
 </body>
 <script>
@@ -51,8 +48,5 @@
 
     function Home() {
         window.location.href = 'index.html';
-        $('#list_data').empty()
-        loadAllData()
-
     }
 </script>

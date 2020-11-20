@@ -21,8 +21,13 @@ function loadAllData() {
 
     }
 }
-
+$(window).on('load', function() {
+    loadAllData()
+})
 $(document).ready(function() {
+    $('#home').on('click', function() {
+        loadAllData()
+    })
 
     $(document).on('click', '#delete', function() {
         let id = $(this).attr('feedbackId')
