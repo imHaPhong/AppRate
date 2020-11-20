@@ -15,34 +15,35 @@
 </head>
 
 <body>
-    <nav>
+    <div data-role="page" id="index">
+        <nav>
 
-        <div class="logo">
-            I-Rate App</div>
-        <div class="nav-items">
+            <div class="logo">
+                I-Rate App</div>
+            <div class="nav-items">
 
-    </nav>
-    <div id="homeandadd">
-        <button><p onclick="Home()">Home</p></button>
-        <button><p onclick="goToAdd()">Add Review</p></button>
-    </div>
-    <div class="content">
-        <form class="ui-filterable">
-            <input id="filterBasic-input" data-type="search">
-        </form>
-        <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" id="list_data">
+        </nav>
+        <div>
+            <button><p onclick="Home()">Home</p></button>
+            <button><p onclick="goToAdd()">Add Review</p></button>
+        </div>
+        <div class="content">
+            <form class="ui-filterable">
+                <input id="filterBasic-input" data-type="search">
+            </form>
+            <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" id="list_data">
 
-        </ul>
+            </ul>
 
-    </div>
-
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/database.js"></script>
-    <script type="text/javascript" src="js/detail.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+        </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/database.js"></script>
+        <script type="text/javascript" src="js/detail.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
 </body>
 <script>
     function goToAdd() {
@@ -50,7 +51,7 @@
     }
 
     function Home() {
-        window.location.href = 'index.html';
+        window.location.href = '#index';
         document.getElementById('list_data').empty()
         loadAllData()
         return false

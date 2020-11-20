@@ -15,48 +15,49 @@
 </head>
 
 <body>
-    <nav>
+    <div data-role="page" id="AddFeedback">
+        <nav>
 
-        <div class="logo">
-            I-Rate App</div>
-        <div class="nav-items">
-    </nav>
-    <div id="homeandadd">
-        <button><p onclick="Home()">Home</p></button>
-        <button><p onclick="goToAdd()">Add Review</p></button>
-    </div>
-    <div class="container-contact100">
-        <div class="wrap-contact100">
-            <form class="contact100-form validate-form">
-                <span class="contact100-form-title">
+            <div class="logo">
+                I-Rate App</div>
+            <div class="nav-items">
+        </nav>
+        <div id="homeandadd">
+            <button><p onclick="Home()">Home</p></button>
+            <button><p onclick="goToAdd()">Add Review</p></button>
+        </div>
+        <div class="container-contact100">
+            <div class="wrap-contact100">
+                <form class="contact100-form validate-form">
+                    <span class="contact100-form-title">
                     Feedback Form
                 </span>
 
-                <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_name" required>
-                    <span class="label-input100">Restaurant Name</span>
-                    <input class="input100" type="text" name="name" placeholder="Enter restaurant name">
-                    <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_type">
-                    <span class="label-input100">Restaurant Type</span>
-                    <input class="input100" type="text" name="name" placeholder="Enter restaurant type">
-                    <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_date">
-                    <span class="label-input100">Date and time of the visit</span>
-                    <input class="input100" type="text" name="name" placeholder="Enter Date and time of the visit">
-                    <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_average_price">
-                    <span class="label-input100">Average meal price per person</span>
-                    <input class="input100" type="text" name="name" placeholder="Enter Average meal price per person">
-                    <span class="focus-input100"></span>
-                </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_name" required>
+                        <span class="label-input100">Restaurant Name</span>
+                        <input class="input100" type="text" name="name" placeholder="Enter restaurant name">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_type">
+                        <span class="label-input100">Restaurant Type</span>
+                        <input class="input100" type="text" name="name" placeholder="Enter restaurant type">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_date">
+                        <span class="label-input100">Date and time of the visit</span>
+                        <input class="input100" type="text" name="name" placeholder="Enter Date and time of the visit">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_average_price">
+                        <span class="label-input100">Average meal price per person</span>
+                        <input class="input100" type="text" name="name" placeholder="Enter Average meal price per person">
+                        <span class="focus-input100"></span>
+                    </div>
 
-                <div class="wrap-input100 input100-select" id="r_service_rating">
-                    <span class="label-input100">Service rating</span>
-                    <div>
-                        <select class="selection-2" name="service">
+                    <div class="wrap-input100 input100-select" id="r_service_rating">
+                        <span class="label-input100">Service rating</span>
+                        <div>
+                            <select class="selection-2" name="service">
                             <option>Choose rating (Stars)</option>
                             <option>1</option>
                             <option>2</option>
@@ -64,14 +65,14 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
+                        </div>
+                        <span class="focus-input100"></span>
                     </div>
-                    <span class="focus-input100"></span>
-                </div>
 
-                <div class="wrap-input100 input100-select" id="r_cleanliness_rating">
-                    <span class="label-input100">Cleanliness rating</span>
-                    <div>
-                        <select class="selection-2" name="budget">
+                    <div class="wrap-input100 input100-select" id="r_cleanliness_rating">
+                        <span class="label-input100">Cleanliness rating</span>
+                        <div>
+                            <select class="selection-2" name="budget">
                             <option>Choose rating (Stars)</option>
                             <option>1</option>
                             <option>2</option>
@@ -79,13 +80,13 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
+                        </div>
+                        <span class="focus-input100"></span>
                     </div>
-                    <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100 input100-select" id="r_food_rating">
-                    <span class="label-input100">Food quality rating</span>
-                    <div>
-                        <select class="selection-2" name="budget">
+                    <div class="wrap-input100 input100-select" id="r_food_rating">
+                        <span class="label-input100">Food quality rating</span>
+                        <div>
+                            <select class="selection-2" name="budget">
                             <option>Choose rating (Stars)</option>
                             <option>1</option>
                             <option>2</option>
@@ -93,35 +94,35 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
+                        </div>
+                        <span class="focus-input100"></span>
                     </div>
-                    <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100 validate-input" data-validate="Message is required" id="r_notes">
-                    <span class="label-input100">Notes</span>
-                    <textarea class="input100" name="message" placeholder="Your notes here..."></textarea>
-                    <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_reporter">
-                    <span class="label-input100">Name of the reporter</span>
-                    <input class="input100" type="text" name="name" placeholder="Enter name of the reporter">
-                    <span class="focus-input100"></span>
-                </div>
+                    <div class="wrap-input100 validate-input" data-validate="Message is required" id="r_notes">
+                        <span class="label-input100">Notes</span>
+                        <textarea class="input100" name="message" placeholder="Your notes here..."></textarea>
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Name is required" id="r_reporter">
+                        <span class="label-input100">Name of the reporter</span>
+                        <input class="input100" type="text" name="name" placeholder="Enter name of the reporter">
+                        <span class="focus-input100"></span>
+                    </div>
 
-                <div class="container-contact100-form-btn">
-                    <div class="wrap-contact100-form-btn">
-                        <div class="contact100-form-bgbtn"></div>
-                        <button class="contact100-form-btn">
+                    <div class="container-contact100-form-btn">
+                        <div class="wrap-contact100-form-btn">
+                            <div class="contact100-form-bgbtn"></div>
+                            <button class="contact100-form-btn">
                             <span>
                                 Send Feedback
                                 <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
                             </span>
                         </button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-
+        </div>
 
 </body>
 
@@ -139,7 +140,7 @@
     }
 
     function Home() {
-        window.location.href = 'index.html';
+        window.location.href = '#index';
         document.getElementById('list_data').empty()
         loadAllData()
         return false
