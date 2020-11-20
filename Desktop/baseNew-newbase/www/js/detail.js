@@ -22,9 +22,6 @@ function loadAllData() {
     }
 }
 
-$(window).on('load', function() {
-    loadAllData()
-})
 $(document).ready(function() {
 
     $(document).on('click', '#delete', function() {
