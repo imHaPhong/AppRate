@@ -66,7 +66,7 @@ function getAllData() {
 //delete
 function deleteFeedback(feedbackId) {
     feedbackId = Number(feedbackId)
-    const deleteFb = db.transaction(["Re-Data"], "readwrite").objectStore("Re-Data").delete(feedbackId)
+    const deleteFb = db.transaction(["ReData"], "readwrite").objectStore("ReData").delete(feedbackId)
     deleteFb.onsuccess = function() {
         alert("delete successfully")
         document.getElementById('list_data').innerHTML = ""
